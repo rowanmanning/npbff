@@ -1,0 +1,40 @@
+{
+  "name": "npbff",
+  "version": "0.0.0",
+  "description": "Create non-player characters for your D&D world",
+  "keywords": [
+    "npc",
+    "generator"
+  ],
+  "author": "Rowan Manning (https://rowanmanning.com/)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rowanmanning/npbff.git"
+  },
+  "homepage": "https://github.com/rowanmanning/npbff",
+  "bugs": "https://github.com/rowanmanning/npbff/issues",
+  "license": "MIT",
+  "engines": {
+    "node": ">=8"
+  },
+  "dependencies": {
+    "smart-random": "^0.3.0"
+  },
+  "devDependencies": {
+    "@rowanmanning/eslint-config": "^1.0.0",
+    "@rowanmanning/make": "^1.0.0",
+    "eslint": "^4.9.0",
+    "mocha": "^4.0.1",
+    "mockery": "^2.1.0",
+    "nyc": "^11.2.1",
+    "proclaim": "^3.5.0",
+    "sinon": "^4.5.0"
+  },
+  "main": "./lib/index.js",
+  "bin": {
+    "npbff": "./bin/index.js"
+  },
+  "scripts": {
+    "test": "make ci"
+  }
+}
